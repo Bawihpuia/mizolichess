@@ -14,14 +14,14 @@
             <div class="col-lg-5 col-md-8 mx-auto shadow border bg-light p-5 rounded">
                 <h2 class="text-center fw-bold mb-3">Registration Form</h2>
                 <form name = "google-sheet" action="/action_page.php">
-                    <div class="p-5 d-grid gap-6 col-auto mx-auto">
+                    <div class="p-5 d-grid gap-6 col-5 mx-5">
                         <button type="button" class="btn btn-success" id="startButton">Click Here First<br>Log into Lichess<br>& Authorize</button>
 
                             <input 
                             type="text"
                             id="token" 
                             name="token" 
-                            class="visually-hidden-focusable text-white-50"
+                            class="visually-hidden-focusable text-white-50 form-control input-sm"
                             pattern="[A-Za-z0-9_]{36}"
                             required>
                             <Script> var input = document.getElementById('token');
