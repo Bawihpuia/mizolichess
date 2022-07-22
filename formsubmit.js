@@ -4,6 +4,6 @@ const form = document.forms['google-sheet']
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => $("#form_alerts").html("<div class='alert alert-success'>I thawn fel tawh e.</div>"))
+    .then(response => $("#form_alerts").html("<div class='alert alert-success'>I inziak lut fel tawh e.</div>"))
     .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Dik lo a awm.</div>"))
  })
