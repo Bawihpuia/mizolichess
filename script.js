@@ -47,7 +47,7 @@ const tokenEndpoint = "https://lichess.org/api/token";
                 response_type: "code",
                 client_id: clientId,
                 code_challenge_method: "S256",
-                scope: "challenge:write team:write tournament:write",
+                scope: "challenge:write tournament:write team:write",
                 code_challenge: codeChallenge,
                 redirect_uri: redirectUri
             });
