@@ -36,6 +36,15 @@
                         <label for="name" class="form-label">Name</label>
                         <input type="text" id="hming" name = "hming" class="form-control" placeholder="Hmingpum" required>
                     </div>
+                    <div class="form-group fw-bold mb-3">
+                        <label for="phone" class="form-label">Contact No</label>
+                        <input type="text" id="phone" name = "phone" class="form-control" placeholder="WhatsApp No" pattern="[0-9]{10}" required>
+                            <Script> var input = document.getElementById('phone');
+                                      input.oninvalid = function(event) {
+                                      event.target.setCustomValidity('Ennawn leh teh. Country code (+91) a ngai lo, digit 10 a nih a ngai.');
+                                    }
+                            </Script>
+                    </div>
 
                     <div class="form-group fw-bold mb-3">
                         <label for="lichessID" class="form-label">Lichess ID</label>
